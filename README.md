@@ -3,7 +3,7 @@
 A real-time multi-driver coordination system demonstrating TCP/UDP network programming, built with .NET 8.0 and C#.
 
 **🎥 Video Presentation:** [YouTube - Project Demo](https://www.youtube.com/watch?v=H5i5DOk6_Eo)  
-**🔗 GitHub Repository:** [GitHub] ([https://github.com/BerkeAlpaslan/PizzaDeliverySimulator3000)
+**🔗 GitHub Repository:** [GitHub](https://github.com/BerkeAlpaslan/PizzaDeliverySimulator3000)
 
 ---
 
