@@ -445,6 +445,8 @@ This project demonstrates:
 - Richard Blum, *C# Network Programming*, Sybex, 2002
 - J. F. Kurose and K. W. Ross, Computer Networking: A Top-Down Approach, 8th ed. Boston, MA: Pearson, 2021
 - [Microsoft, "Asynchronous Programming with async and await," Microsoft Learn, 2024](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/)
+- [Anthropic, "Claude AI," 2024. [Online]](https://claude.ai)
+
 ---
 
 ## 👤 Author
