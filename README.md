@@ -3,7 +3,7 @@
 A real-time multi-driver coordination system demonstrating TCP/UDP network programming, built with .NET 8.0 and C#.
 
 **🎥 Video Presentation:** [YouTube - Project Demo](https://www.youtube.com/watch?v=H5i5DOk6_Eo)  
-**🔗 GitHub Repository:** [https://github.com/BerkeAlpaslan/PizzaDeliverySimulator3000]  
+**🔗 GitHub Repository:** [GitHub] ([https://github.com/BerkeAlpaslan/PizzaDeliverySimulator3000)
 
 ---
 
@@ -128,7 +128,7 @@ Server is now listening on:
 ### **2. Start Driver(s)** (After Server is Running)
 
 ```bash
-cd Client/PizzaDeliverySimulator.Driver/bin/Debug/net8.0
+cd Client/PizzaDeliverySimulator.Driver/bin/Debug/net8.0-windows
 ./PizzaDeliverySimulator.Driver.exe
 ```
 
@@ -143,7 +143,7 @@ cd Client/PizzaDeliverySimulator.Driver/bin/Debug/net8.0
 ### **3. Start Customer(s)** (After Server is Running)
 
 ```bash
-cd Client/PizzaDeliverySimulator.Customer/bin/Debug/net8.0
+cd Client/PizzaDeliverySimulator.Customer/bin/Debug/net8.0-windows
 ./PizzaDeliverySimulator.Customer.exe
 ```
 
