@@ -2,7 +2,8 @@
 
 A real-time multi-driver coordination system demonstrating TCP/UDP network programming, built with .NET 8.0 and C#.
 
-**🔗 GitHub Repository:** [https://github.com/BerkeAlpaslan/PizzaDeliverySimulator3000.git]
+**🎥 Video Presentation:** [YouTube - Project Demo](https://www.youtube.com/watch?v=H5i5DOk6_Eo)  
+**🔗 GitHub Repository:** [https://github.com/BerkeAlpaslan/PizzaDeliverySimulator3000]  
 
 ---
 
@@ -95,40 +96,74 @@ PizzaDeliverySimulator.sln
 
 ## 🚀 Quick Start
 
-### **1. Start Server**
+### ⚠️ **CRITICAL: Start Server First!**
+
+The server MUST be running before starting any clients (Driver/Customer). Otherwise, clients will fail to connect.
+
+---
+
+### **1. Start Server** (REQUIRED - Do This First!)
+
 ```bash
-# Run from Visual Studio or:
-cd Server/PizzaDeliverySimulator.Server
-dotnet run
+cd Server/PizzaDeliverySimulator.Server/bin/Debug/net8.0
+./PizzaDeliverySimulator.Server.exe
 ```
 
-Server starts on:
+**Expected Output:**
+```
+=============================================================
+  PIZZA DELIVERY SERVER
+=============================================================
+[12:00:00] SUCCESS: TCP Server started on port 9050
+[12:00:00] SUCCESS: UDP Location Broadcaster started on port 9051
+[12:00:00] INFO: Waiting for clients to connect...
+```
+
+Server is now listening on:
 - TCP: `localhost:9050`
 - UDP: `localhost:9051`
 
-### **2. Start Driver(s)**
+---
+
+### **2. Start Driver(s)** (After Server is Running)
+
 ```bash
-# Run from Visual Studio or:
-cd Client/PizzaDeliverySimulator.Driver
-dotnet run
+cd Client/PizzaDeliverySimulator.Driver/bin/Debug/net8.0
+./PizzaDeliverySimulator.Driver.exe
 ```
 
-1. Enter driver name
-2. Press Enter to register
-3. Click **READY** to accept orders
+**Steps:**
+1. Enter driver name in the text box
+2. Press **Enter** to register
+3. Click **READY** button to accept orders
+4. Wait for order assignments from customers
 
-### **3. Start Customer(s)**
+---
+
+### **3. Start Customer(s)** (After Server is Running)
+
 ```bash
-# Run from Visual Studio or:
-cd Client/PizzaDeliverySimulator.Customer
-dotnet run
+cd Client/PizzaDeliverySimulator.Customer/bin/Debug/net8.0
+./PizzaDeliverySimulator.Customer.exe
 ```
 
-1. Enter customer name
-2. Press Enter to register
-3. Select pizza type
-4. Enter address
-5. Click **ORDER**
+**Steps:**
+1. Enter customer name in the text box
+2. Press **Enter** to register
+3. Select pizza type from dropdown
+4. Enter delivery address
+5. Click **ORDER** button
+6. Watch real-time driver tracking on the map
+
+---
+
+### **Alternative: Run from Visual Studio**
+
+1. Set **Server** as startup project → Press `F5`
+2. Right-click **Driver** project → Debug → Start New Instance
+3. Right-click **Customer** project → Debug → Start New Instance
+
+This allows debugging multiple instances simultaneously.
 
 ---
 
@@ -408,6 +443,7 @@ This project demonstrates:
 
 - [.NET 8.0 Documentation](https://learn.microsoft.com/en-us/dotnet/)
 - Richard Blum, *C# Network Programming*, Sybex, 2002
+- J. F. Kurose and K. W. Ross, Computer Networking: A Top-Down Approach, 8th ed. Boston, MA: Pearson, 2021
 
 ---
 
@@ -418,3 +454,5 @@ Computer Engineering Student
 Manisa Celal Bayar University  
 Fall 2025-2026
 CSE3233 - Computer Network Programming
+
+---
