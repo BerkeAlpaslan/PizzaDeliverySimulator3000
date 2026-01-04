@@ -96,6 +96,10 @@ PizzaDeliverySimulator.sln
 
 ## 🚀 Quick Start
 
+### ⚠️ IMPORTANT: Extract the ZIP File First!
+
+Before running the application, you MUST extract/unzip the project folder completely. Running executables directly from inside a ZIP archive will cause errors and unexpected behavior.
+
 ### ⚠️ **CRITICAL: Start Server First!**
 
 The server MUST be running before starting any clients (Driver/Customer). Otherwise, clients will fail to connect.
